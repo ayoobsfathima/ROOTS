@@ -5,8 +5,7 @@ history and see a predicted developmental trajectory, using the ordinal
 Disease Course Mapping method from Poulet & Durrleman (2023) fit on
 synthetic CARS2-ST data (n=300).
 
-This page contains only the **Trajectory Explorer** (the population-structure
-/ subtype heatmap tab from the earlier demo was intentionally left out).
+This page contains **Trajectory Explorer**.
 
 At the top there are three resource cards:
 1. **Original Article** — the Poulet & Durrleman (2023) paper, linked to
@@ -25,32 +24,4 @@ At the top there are three resource cards:
   Chart.js from a CDN.
 - `assets/original-article.pdf` — the original paper
 - `assets/journal-club-presentation.pptx` — the journal club slides
-- `assets/about-roots.pdf` — not yet added; see above
-
-## Deploy on Render (onrender.com)
-
-Render serves this as a **Static Site**:
-
-1. Push this folder to a GitHub repo (can be the same repo as your existing
-   demo, in its own subfolder, or a brand-new repo — either works).
-2. Go to [dashboard.render.com](https://dashboard.render.com) → **New +** →
-   **Static Site**.
-3. Connect your GitHub account/repo if you haven't already, and select the
-   repo containing `index.html`.
-4. Settings:
-   - **Build Command**: leave blank (nothing to build)
-   - **Publish Directory**: `.` (or the subfolder path, e.g. `roots_app`, if
-     `index.html` isn't at the repo root)
-5. Click **Create Static Site**. Render gives you a free `https://roots-xxxx.onrender.com`
-   URL within a minute or two, and redeploys automatically on every push.
-
-No server, no environment variables, no database — it's a static file.
-
-## Local preview
-
-Just open `index.html` directly in a browser, or serve it locally:
-
-```bash
-python3 -m http.server 8000
-# then visit http://localhost:8000
-```
+- `assets/about-roots.pdf` — model information for ROOTS;
